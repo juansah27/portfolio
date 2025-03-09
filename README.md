@@ -154,4 +154,47 @@ Untuk panduan lengkap, lihat file `EMAILJS_SETUP.md`.
 
 ## Lisensi
 
-MIT License 
+MIT License
+
+# Portfolio Website
+
+Ini adalah website portfolio pribadi yang dibuat dengan Next.js dan Tailwind CSS.
+
+## Cara Deploy
+
+### Opsi 1: Deploy ke Netlify
+
+1. Buka [Netlify](https://app.netlify.com/)
+2. Drag and drop folder `out` ke area upload di Netlify
+3. Tunggu proses deployment selesai
+4. Konfigurasi domain kustom Anda (juansah.site) di pengaturan Netlify
+
+### Opsi 2: Deploy ke Vercel
+
+1. Buka [Vercel](https://vercel.com/)
+2. Buat akun atau login
+3. Klik "New Project"
+4. Import repository dari GitHub atau upload folder proyek
+5. Tunggu proses deployment selesai
+6. Konfigurasi domain kustom Anda (juansah.site) di pengaturan Vercel
+
+### Opsi 3: Deploy ke GitHub Pages
+
+1. Buat repository baru di GitHub
+2. Push kode ke repository
+3. Aktifkan GitHub Pages di pengaturan repository
+4. Pilih branch `gh-pages` sebagai sumber
+5. Konfigurasi domain kustom Anda (juansah.site) di pengaturan GitHub Pages
+
+## Pengembangan Lokal
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+``` 
