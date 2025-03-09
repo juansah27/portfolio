@@ -49,10 +49,10 @@ const Contact = () => {
     try {
       // Menggunakan EmailJS untuk mengirim email dengan konfigurasi dari file config
       const result = await emailjs.sendForm(
-        'service_t46paw8',
-        'template_dpivh9k',
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
         formRef.current as HTMLFormElement,
-        '2gCQhOebFtCEy0BBC'
+        EMAILJS_CONFIG.publicKey
       )
       
       console.log('Email sent successfully:', result.text)
