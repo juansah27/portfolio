@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-import { EMAILJS_CONFIG } from '@/config/emailjs'
+import { EMAILJS_CONFIG } from '../config/emailjs'
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null)
