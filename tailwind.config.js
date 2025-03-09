@@ -35,32 +35,16 @@ module.exports = {
           950: '#2e1065',
         },
         dark: '#121212',
-        light: '#f8f9fa',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'],
+        sans: ['var(--font-inter)', 'sans-serif'],
       },
-      animation: {
-        'terminal-cursor': 'blink 1s step-end infinite',
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-in-out',
-      },
-      keyframes: {
-        blink: {
-          '0%, 100%': { opacity: 1 },
-          '50%': { opacity: 0 },
-        },
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: 0 },
-          '100%': { transform: 'translateY(0)', opacity: 1 },
-        },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
   plugins: [],
+  darkMode: 'class',
 } 

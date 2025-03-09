@@ -1,9 +1,9 @@
 // Konfigurasi EmailJS
-// Ganti nilai-nilai ini dengan nilai yang Anda dapatkan dari dashboard EmailJS
+// Menggunakan variabel lingkungan untuk keamanan
 
 export const EMAILJS_CONFIG = {
-  serviceId: 'service_id', // Ganti dengan service_id Anda
-  templateId: 'template_id', // Ganti dengan template_id Anda
-  publicKey: 'public_key', // Ganti dengan public_key Anda
-  toEmail: 'mr.juansah27@gmail.com' // Email tujuan
+  serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_t46paw8',
+  templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_dpivh9k',
+  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '2gCQhOebFtCEy0BBC',
+  toEmail: process.env.NEXT_PUBLIC_EMAILJS_TO_EMAIL || 'mr.juansah27@gmail.com'
 } 
